@@ -29,7 +29,7 @@ atom-text-editor {
 			&.cursor-line {
 				background-color: @syntax-gutter-background-color-selected;
 				color: @syntax-gutter-text-color-selected;
-				font-weight: bold;
+				font-weight: normal;
 				text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 			}
 
@@ -85,7 +85,8 @@ atom-text-editor .search-results .marker.current-result .region {
 	}
 
 	&.operator {
-		color: @syntax-text-color;
+		color: @medium;
+		text-shadow: -1px 0 0 @red, 1px 0 0 @blue, -2px 0 0 @redultralight, 2px 0 0 @blueultralight;
 	}
 
 	&.other.special-method {
@@ -105,13 +106,19 @@ atom-text-editor .search-results .marker.current-result .region {
 	color: @dark;
 }
 
+.arguments {
+	color: @dark;
+	font-weight: normal;
+}
 .constant {
 	color: @medium;
 	font-weight: bold;
 	text-shadow: -1px 0 0 @redmedium, 1px 0 0 @bluemedium;
 
 	&.character.escape {
-		color: @dark;
+		color: @transparent;
+		font-weight: normal;
+		text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 	}
 
 	&.numeric {
@@ -192,6 +199,11 @@ atom-text-editor .search-results .marker.current-result .region {
 			color: @dark;
 			font-style: italic;
 		}
+		&.tag {
+			color: @medium;
+			font-weight: bold;
+			text-shadow: -1px 0 0 @redmedium, 1px 0 0 @bluemedium;
+		}
 	}
 
 	&.section.embedded {
@@ -246,12 +258,14 @@ atom-text-editor .search-results .marker.current-result .region {
 	}
 
 	&.other.attribute-name {
-		color: @dark;
+		color: @transparent;
+		font-weight: bold;
+		text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 
 		&.id {
 			color: @transparent;
 			font-weight: bold;
-			text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
+			text-shadow: -2px 0 0 @red, 2px 0 0 @blue;
 		}
 	}
 }
