@@ -1,7 +1,7 @@
 {
   "name": "anaglyph-syntax",
   "theme": "syntax",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A light syntax theme based on old anaglyph 3D images. Not too easy on the eyes, it's more just something to mess around with.",
   "keywords": [
     "syntax",
