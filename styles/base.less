@@ -77,8 +77,8 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .keyword {
 	color: @dark;
-	font-weight: bold;
-	text-shadow: -2px 0 0 @red, 2px 0 0 @blue;
+	font-weight: normal;
+	text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 
 	&.control {
 		color: @dark;
@@ -86,24 +86,25 @@ atom-text-editor .search-results .marker.current-result .region {
 
 	&.operator {
 		color: @medium;
-		text-shadow: -1px 0 0 @red, 1px 0 0 @blue, -2px 0 0 @redultralight, 2px 0 0 @blueultralight;
+		text-shadow: -1px 0 0 @red, 2px 0 0 @blue;
 	}
 
 	&.other.special-method {
 		color: @dark;
-		font-weight: bold;
+		font-weight: normal;
 		text-shadow: -3px 0 0 @red, 3px 0 0 @blue;
 	}
 
 	&.other.unit {
 		color: @medium;
-		font-weight: bold;
+		font-weight: normal;
 		text-shadow: -1px 0 0 @redmedium, 1px 0 0 @bluemedium;
 	}
 }
 
 .storage {
 	color: @dark;
+	text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 }
 
 .arguments {
@@ -112,11 +113,11 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 .constant {
 	color: @medium;
-	font-weight: bold;
+	font-weight: normal;
 	text-shadow: -1px 0 0 @redmedium, 1px 0 0 @bluemedium;
 
 	&.character.escape {
-		color: @transparent;
+		color: @translucent;
 		font-weight: normal;
 		text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 	}
@@ -136,7 +137,7 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .variable {
 	color: @transparent;
-	text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
+	text-shadow: -1px 0 0 @red, 0px 0 0 @blue;
 
 	&.interpolation {
 		color: @reddark;
@@ -144,6 +145,10 @@ atom-text-editor .search-results .marker.current-result .region {
 
 	&.parameter.function {
 		color: @syntax-text-color;
+	}
+	&.property {
+		font-weight: normal;
+		text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 	}
 }
 
@@ -157,9 +162,13 @@ atom-text-editor .search-results .marker.current-result .region {
 
 	&.regexp {
 		color: @medium;
-
+		font-weight: normal;
+		text-shadow: -1px 0 0 @redmedium, 1px 0 0 @bluemedium;
 		.source.ruby.embedded {
 			color: @medium;
+			font-weight: normal;
+			text-shadow: -1px 0 0 @redmedium, 1px 0 0 @bluemedium;
+;
 		}
 	}
 
@@ -187,7 +196,7 @@ atom-text-editor .search-results .marker.current-result .region {
 		&.heading,
 		&.identity {
 			color: @dark;
-			text-shadow: 2px 0 0 @blue;
+			text-shadow: 1px 0 0 @blue;
 		}
 
 		&.bold {
@@ -221,7 +230,7 @@ atom-text-editor .search-results .marker.current-result .region {
 
 		&.any-method {
 			color: @dark;
-			text-shadow: 2px 0 0 @blue;
+			text-shadow: 1px 0 0 @blue;
 		}
 	}
 }
@@ -253,8 +262,10 @@ atom-text-editor .search-results .marker.current-result .region {
 
 	&.name.tag {
 		color: @medium;
-		font-weight: bold;
+		font-weight: normal;
 		text-shadow: -1px 0 0 @redmedium, 1px 0 0 @bluemedium;
+		//mix-blend-mode: multiply;
+		//-webkit-background-clip: text;
 	}
 
 	&.other.attribute-name {
@@ -265,7 +276,7 @@ atom-text-editor .search-results .marker.current-result .region {
 		&.id {
 			color: @transparent;
 			font-weight: bold;
-			text-shadow: -2px 0 0 @red, 2px 0 0 @blue;
+			text-shadow: -1px 0 0 @red, 2px 0 0 @blue;
 		}
 	}
 }
