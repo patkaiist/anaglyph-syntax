@@ -50,7 +50,9 @@ atom-text-editor {
 	}
 
 	.cursor {
-		color: @syntax-cursor-color;
+		color: @ultralight;
+		background: @translucent;
+		box-shadow: -1px 0 0 @redlight, 1px 0 0 @bluelight;
 	}
 
 	.selection .region {
@@ -70,7 +72,7 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .comment {
-	color: @ultralight;
+	color: @invisible;
 }
 
 .keyword {
@@ -126,7 +128,7 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .variable {
-	color: @invis;
+	color: @transparent;
 	text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 
 	&.interpolation {
@@ -162,7 +164,7 @@ atom-text-editor .search-results .marker.current-result .region {
 .punctuation {
 	&.definition {
 		&.comment {
-			color: @ultralight;
+			color: @invisible;
 		}
 
 		&.array,
@@ -247,7 +249,7 @@ atom-text-editor .search-results .marker.current-result .region {
 		color: @dark;
 
 		&.id {
-			color: @invis;
+			color: @transparent;
 			font-weight: bold;
 			text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 		}
