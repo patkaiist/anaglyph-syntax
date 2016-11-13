@@ -1,5 +1,8 @@
-# anaglyph-syntax theme
+# <img src="http://phonemica.net/github/anaglyph-syntax-name.png" height="24"> syntax theme
 
-A light syntax theme based on old anaglyph 3D images. Not too easy on the eyes, it's more just something to mess around with.
+A light syntax theme based on old anaglyph images. 3D Glasses not included.
 
-![screenshot of 0.5](http://phonemica.net/github/anaglyph-syntax.jpg)
+## Screenshots
+![javascript](http://phonemica.net/github/anaglyph-syntax1.jpg)
+
+![html](http://phonemica.net/github/anaglyph-syntax2.jpg)
