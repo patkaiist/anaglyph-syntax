@@ -2,13 +2,15 @@
   "name": "anaglyph-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "A light syntax theme based on old anaglyph 3D images. Not too easy on the eyes, it's more just something to mess around with.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "light",
+    "anaglyph"
   ],
   "repository": "https://github.com/atom/anaglyph-syntax",
-  "license": "MIT",
+  "license": "ISC",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   }
