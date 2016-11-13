@@ -29,6 +29,8 @@ atom-text-editor {
 			&.cursor-line {
 				background-color: @syntax-gutter-background-color-selected;
 				color: @syntax-gutter-text-color-selected;
+				font-weight: bold;
+				text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 			}
 
 			&.cursor-line-no-selection {
@@ -142,18 +144,18 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .string {
-	color: @dark;
+	color: @light;
 
 	&.regexp {
-		color: @dark;
+		color: @medium;
 
 		.source.ruby.embedded {
-			color: @dark;
+			color: @medium;
 		}
 	}
 
 	&.other.link {
-		color: @red;
+		color: @medium;
 	}
 }
 
@@ -165,9 +167,12 @@ atom-text-editor .search-results .marker.current-result .region {
 
 		&.array,
 		&.parameters,
-		&.string,
 		&.variable {
 			color: @syntax-text-color;
+		}
+
+		&.string {
+			color: @light;
 		}
 
 		&.heading,
