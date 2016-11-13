@@ -9,7 +9,7 @@
     "light",
     "anaglyph"
   ],
-  "repository": "https://github.com/atom/anaglyph-syntax",
+  "repository": "https://github.com/keyilan/anaglyph-syntax",
   "license": "ISC",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
