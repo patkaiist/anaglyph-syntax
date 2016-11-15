@@ -102,6 +102,25 @@ atom-text-editor .search-results .marker.current-result .region {
 	}
 }
 
+.latex, .tex {
+	&.function,
+	&.meta,
+	&.support,
+	&.punctuation,
+	&.definition {
+		color: @light !important;
+		text-shadow: -1px 0 0 @redlight, 1px 0 0 @bluelight;
+		font-weight: normal !important;
+	}
+	&.entity,
+	&.variable,
+	&.paramater {
+		color: mix(@light,@medium,90%) !important;
+		text-shadow: -1px 0 0 @red, -2px 0 0 @redultralight, 1px 0 0 @blue, 2px 0 0 @blueultralight !important;
+		font-weight: normal !important;
+	}
+}
+
 .storage {
 	color: @dark;
 	text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
@@ -256,8 +275,12 @@ atom-text-editor .search-results .marker.current-result .region {
 	}
 
 	&.name.section {
-		color: @blue;
-		font-weight: bold;
+		color: @medium;
+		&.latex {
+			color: @light;
+			font-weight: bold;
+			text-shadow: none;
+		}
 	}
 
 	&.name.tag {
