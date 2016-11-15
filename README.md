@@ -11,7 +11,7 @@ A light syntax theme based on old anaglyph images. 3D Glasses not included.
 
 JavaScript
 
-![javascript](http://phonemica.net/github/anaglyph-syntax3.png)
+![javascript](http://phonemica.net/github/anaglyph-syntax4.png)
 
 HTML
 
