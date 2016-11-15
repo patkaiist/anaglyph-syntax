@@ -4,8 +4,7 @@ A light syntax theme based on old anaglyph images. 3D Glasses not included.
 
 ## To-do
 
-- Better LaTeX support
-- Greater overall consistency
+I'll continue to work on this and make minor improvements. It started out not too serious but now I've actually started using it as my main light syntax theme.
 
 ## Screenshots
 
