@@ -22,4 +22,4 @@ LaTeX
 
 Bibtex
 
-![bibtex](http://phonemica.net/github/anaglyph-bibtex.png)
+![bibtex](http://phonemica.net/github/anaglyph-bibtex2.png)
