@@ -20,7 +20,7 @@
 
 .softred {
 	color: @red !important;
-	text-shadow: -1px 0 0 @blue;
+	text-shadow: 1px 0 0 @blue;
 }
 
 .softblue {
@@ -39,14 +39,12 @@
 }
 
 .heavydarktext {
-	background-color: @background;
 	color: @medium !important;
 	font-weight: normal;
 	text-shadow: -1px 0 0 @red, -2px 0 0 @redultralight, 1px 0 0 @blue, 2px 0 0 @blueultralight !important;
 }
 
 .darktext {
-	background-color: @background;
 	color: @medium;
 	font-weight: normal;
 	text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
@@ -66,7 +64,7 @@
 
 .lighttext {
 	color: @light;
-	font-weight: normal;
+	font-weight: 100 !important;
 	text-shadow: -1px 0 0 @redlight, 1px 0 0 @bluelight;
 }
 
@@ -76,13 +74,14 @@
 }
 
 .accentnormal {
-	color: @transparent;
+	color: mix(@transparent,@light,75%);
 	text-shadow: -1px 0 0 @red, 1px 0 0 @blue;
 }
 
 .accentstrong {
 	color: mix(@red,@reddark,60%);
-	text-shadow: -1px 0 0 @redlight, 1px 0 0 @blue, 2px 0 0 @bluelight;
+	font-weight: 100;
+	text-shadow: -1px 0 0 mix(@redultralight,@redlight,50%), 1px 0 0 @blue, 2px 0 0 @bluelight;
 }
 
 .commentinvis {
