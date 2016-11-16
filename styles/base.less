@@ -1,5 +1,9 @@
 @import "syntax-variables";
 
+* {
+	font-family: "Input Mono";
+}
+
 :host,
 atom-text-editor {
 	background-color: @syntax-background-color;
@@ -225,7 +229,7 @@ atom-text-editor .search-results .marker.current-result .region {
 	}
 
 	&.name.section {
-		.accentnormal;
+		.accentstrong;
 	}
 
 	&.name.tag {
@@ -240,7 +244,7 @@ atom-text-editor .search-results .marker.current-result .region {
 		.lighttext;
 
 		&.id {
-			.accentnormal;
+			.accentstrong;
 		}
 	}
 }
