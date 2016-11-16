@@ -18,4 +18,8 @@ HTML
 
 LaTeX
 
-![html](http://phonemica.net/github/anaglyph-latex.png)
+![latex](http://phonemica.net/github/anaglyph-latex.png)
+
+Bibtex
+
+![bibtex](http://phonemica.net/github/anaglyph-bibtex.png)
