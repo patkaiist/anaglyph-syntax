@@ -114,7 +114,7 @@ atom-text-editor .search-results .marker.current-result .region {
 	.softred;
 
 	&.interpolation {
-		color: darken(@red, 10%);
+		.accentstrong;
 	}
 
 	&.parameter.function {
@@ -129,7 +129,9 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .string {
 	.plainlight;
-
+	&.bibtex.quoted {
+		.lighttext;
+	}
 	&.regexp {
 		.mediumtext;
 
@@ -137,7 +139,6 @@ atom-text-editor .search-results .marker.current-result .region {
 			.lighttext;
 		}
 	}
-
 	&.other.link {
 		.softred;
 	}
@@ -149,9 +150,15 @@ atom-text-editor .search-results .marker.current-result .region {
 			.commentinvis;
 		}
 
+		&.string {
+			color: @syntax-text-color;
+			&.bibtex {
+				.plainlight;
+			}
+		}
+
 		&.array,
 		&.parameters,
-		&.string,
 		&.variable {
 			color: @syntax-text-color;
 		}
@@ -203,6 +210,9 @@ atom-text-editor .search-results .marker.current-result .region {
 
 	&.name.type {
 		.softblue;
+		&.bibtex {
+			.accentstrong;
+		}
 	}
 
 	&.other.inherited-class {
