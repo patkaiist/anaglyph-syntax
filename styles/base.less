@@ -1,7 +1,8 @@
 @import "syntax-variables";
 
 * {
-	font-family: "Input Mono", Consolas, Courier, "Courier New";
+	// uncomment if you have Input Mono installed
+	//font-family: "Input Mono", Consolas, Courier, "Courier New";
 }
 
 :host,
@@ -47,9 +48,7 @@ atom-text-editor {
 	}
 
 	.cursor {
-		color: @light;
-		background: mix(@transparent,@medium,90%);
-		box-shadow: -1px 0 0 @redlight, 1px 0 0 @blueultralight;
+		color: @syntax-cursor-color;
 	}
 
 	.selection .region {
@@ -129,7 +128,8 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .invalid.illegal {
-	.error;
+	background-color: @red;
+	color: @syntax-background-color;
 }
 
 .string {
@@ -147,6 +147,10 @@ atom-text-editor .search-results .marker.current-result .region {
 	&.other.link {
 		.softred;
 	}
+}
+
+.icon.icon-check {
+	color: @red;
 }
 
 .punctuation {
@@ -252,7 +256,7 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .meta {
 	&.class {
-		color: @medium;
+		color: @blue;
 	}
 
 	&.link {
